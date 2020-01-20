@@ -1,3 +1,9 @@
+# bin
+bin/
+
+# Cocos directory, should be added locally
+cocos2d/
+
 # Prerequisites
 *.d
 
