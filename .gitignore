@@ -3,6 +3,7 @@ bin/
 
 # Cocos directory, should be added locally
 cocos2d/
+*-build/
 
 # Prerequisites
 *.d

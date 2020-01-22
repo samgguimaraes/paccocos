@@ -784,22 +784,6 @@ base/CCEventListenerCustom.h
 base/CCEventDispatcher.h
 ../cocos2d/cocos/3d/base/CCEventDispatcher.h
 
-../cocos2d/cocos/audio/include/AudioEngine.h
-platform/CCPlatformConfig.h
-../cocos2d/cocos/audio/include/platform/CCPlatformConfig.h
-platform/CCPlatformMacros.h
-../cocos2d/cocos/audio/include/platform/CCPlatformMacros.h
-audio/include/Export.h
-../cocos2d/cocos/audio/include/audio/include/Export.h
-functional
--
-list
--
-string
--
-unordered_map
--
-
 ../cocos2d/cocos/audio/include/Export.h
 FBaseConfig.h
 -
@@ -2948,20 +2932,6 @@ GL/glx.h
 EGL/egl.h
 -
 
-/home/sgg/dev/gms/paccocos/Classes/AppDelegate.cpp
-AppDelegate.h
-/home/sgg/dev/gms/paccocos/Classes/AppDelegate.h
-HelloWorldScene.h
-/home/sgg/dev/gms/paccocos/Classes/HelloWorldScene.h
-audio/include/AudioEngine.h
-/home/sgg/dev/gms/paccocos/Classes/audio/include/AudioEngine.h
-audio/include/SimpleAudioEngine.h
-/home/sgg/dev/gms/paccocos/Classes/audio/include/SimpleAudioEngine.h
-
-/home/sgg/dev/gms/paccocos/Classes/AppDelegate.h
-cocos2d.h
-/home/sgg/dev/gms/paccocos/Classes/cocos2d.h
-
 /home/sgg/dev/gms/paccocos/Classes/HelloWorldScene.cpp
 HelloWorldScene.h
 /home/sgg/dev/gms/paccocos/Classes/HelloWorldScene.h
@@ -2971,16 +2941,4 @@ SimpleAudioEngine.h
 /home/sgg/dev/gms/paccocos/Classes/HelloWorldScene.h
 cocos2d.h
 /home/sgg/dev/gms/paccocos/Classes/cocos2d.h
-
-/home/sgg/dev/gms/paccocos/proj.linux/main.cpp
-../Classes/AppDelegate.h
-/home/sgg/dev/gms/paccocos/Classes/AppDelegate.h
-stdlib.h
--
-stdio.h
--
-unistd.h
--
-string
--
 
