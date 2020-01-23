@@ -2,11 +2,24 @@
 
 USING_NS_CC;
 
-Scene* GraphicScene::createScene()
+Scene* GraphicsScene::createScene()
 {
     auto scene = Scene::create();
-    auto layer = GraphicScene::create();
+    auto layer = GraphicsScene::create();
     scene->addChild(layer);
 
-    reuturn scene;
+    return scene;
+}
+
+bool GraphicsScene::init()
+{
+    if (!Layer::init())
+        return false;
+
+    auto sprite = Sprite::create("pacco.png");
+    sprite->setPosition(0, 0);
+
+    this->addChild(sprite, 0);
+
+    return true;
 }

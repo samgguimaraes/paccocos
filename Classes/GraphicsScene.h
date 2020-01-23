@@ -8,4 +8,4 @@ class GraphicsScene:public cocos2d::Layer
         static cocos2d::Scene* createScene();
         virtual bool init();
         CREATE_FUNC(GraphicsScene);
-}
+};

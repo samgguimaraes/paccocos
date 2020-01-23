@@ -1,3 +1,6 @@
+# Don't wannt these
+.*
+
 # bin
 bin/
 
