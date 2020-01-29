@@ -20,26 +20,20 @@ bool GraphicsScene::init()
     if (!Layer::init())
         return false;
 
-
-//    Image imageWall;
-//    imageWall.initWithImageFile("walls.png");
-//    Texture2D* texWall;
-//    texWall->initWithImage(imageWall);
-
-    Vector<SpriteFrame*> frames;
-    frames.pushBack(SpriteFrame::create("pacco.png", Rect(0,0,32,32)));
-    frames.pushBack(SpriteFrame::create("pacco.png", Rect(0,32,32,32)));
-    frames.pushBack(SpriteFrame::create("pacco.png", Rect(32,0,32,32)));
-    frames.pushBack(SpriteFrame::create("pacco.png", Rect(32,32,32,32)));
+    auto texCache = Director::getInstance()->getTextureCache();
+    auto texture = texCache->addImage("pacco.png");
 
     Animation* animation = Animation::create();
-    animation->addSpriteFrame(frames.at(0));
-    animation->addSpriteFrame(frames.at(1));
-    animation->addSpriteFrame(frames.at(2));
-    animation->addSpriteFrame(frames.at(3));
+    animation->addSpriteFrameWithTexture(texture, Rect(0,0,32,32));
+    animation->addSpriteFrameWithTexture(texture, Rect(32,0,32,32));
+    animation->addSpriteFrameWithTexture(texture, Rect(0,32,32,32));
+    animation->addSpriteFrameWithTexture(texture, Rect(32,32,32,32));
+    animation->setDelayPerUnit(0.5);
+    animation->setLoops(-1);
 
-    auto sprite = Sprite::create();
-    sprite->setSpriteFrame(frames.at(0));
+    std::cout << animation->getFrames().size() << std::endl;
+
+    auto sprite = Sprite::createWithSpriteFrame(animation->getFrames().at(0)->getSpriteFrame());
     sprite->runAction(Animate::create(animation));
     sprite->setPosition(100, 100);
 
