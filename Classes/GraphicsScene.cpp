@@ -1,4 +1,8 @@
 #include "GraphicsScene.h"
+#include "Character.h"
+
+#include <iostream>
+using namespace std;
 
 USING_NS_CC;
 
@@ -41,6 +45,10 @@ bool GraphicsScene::init()
 
 
     this->addChild(sprite, 0);
+
+    Character c1 = Character();
+    Character c2 = Character("file1.png");
+    Character c3 = Character("file2.png", 32);
 
     return true;
 }
